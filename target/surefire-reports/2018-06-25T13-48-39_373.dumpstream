@@ -1,0 +1,177 @@
+# Created on 2018-06-25T13:48:39.417
+[AppClassLoader@18b4aac2] abort trouble in: 
+
+# Created on 2018-06-25T13:48:39.428
+io.qameta.allure.aspects.StepsAspects -- (IllegalStateException) there is no classname for invokedynamic
+
+# Created on 2018-06-25T13:48:39.442
+there is no classname for invokedynamic
+
+# Created on 2018-06-25T13:48:39.450
+java.lang.IllegalStateException: there is no classname for invokedynamic
+
+# Created on 2018-06-25T13:48:39.467
+	at org.aspectj.apache.bcel.generic.InvokeDynamic.getClassName(InvokeDynamic.java:126)
+
+# Created on 2018-06-25T13:48:39.480
+	at org.aspectj.weaver.bcel.BcelAccessForInlineMunger.openAroundAdvice(BcelAccessForInlineMunger.java:141)
+
+# Created on 2018-06-25T13:48:39.487
+	at org.aspectj.weaver.bcel.BcelAccessForInlineMunger.munge(BcelAccessForInlineMunger.java:80)
+
+# Created on 2018-06-25T13:48:39.502
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:440)
+
+# Created on 2018-06-25T13:48:39.509
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:100)
+
+# Created on 2018-06-25T13:48:39.520
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1697)
+
+# Created on 2018-06-25T13:48:39.528
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1641)
+
+# Created on 2018-06-25T13:48:39.539
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1406)
+
+# Created on 2018-06-25T13:48:39.631
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1159)
+
+# Created on 2018-06-25T13:48:39.642
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:527)
+
+# Created on 2018-06-25T13:48:39.656
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:363)
+
+# Created on 2018-06-25T13:48:39.676
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:121)
+
+# Created on 2018-06-25T13:48:39.689
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+
+# Created on 2018-06-25T13:48:39.700
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+
+# Created on 2018-06-25T13:48:39.711
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+
+# Created on 2018-06-25T13:48:39.723
+	at java.lang.ClassLoader.defineClass1(Native Method)
+
+# Created on 2018-06-25T13:48:39.741
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+
+# Created on 2018-06-25T13:48:39.753
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+
+# Created on 2018-06-25T13:48:39.760
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+
+# Created on 2018-06-25T13:48:39.770
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+
+# Created on 2018-06-25T13:48:39.778
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+
+# Created on 2018-06-25T13:48:39.787
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+
+# Created on 2018-06-25T13:48:39.820
+	at java.security.AccessController.doPrivileged(Native Method)
+
+# Created on 2018-06-25T13:48:39.824
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+
+# Created on 2018-06-25T13:48:39.831
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+
+# Created on 2018-06-25T13:48:39.836
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+
+# Created on 2018-06-25T13:48:39.841
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+
+# Created on 2018-06-25T13:48:39.846
+	at steps.step1.OpenUrl(step1.java:16)
+
+# Created on 2018-06-25T13:48:39.851
+	at test.test.testcase(test.java:29)
+
+# Created on 2018-06-25T13:48:39.856
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created on 2018-06-25T13:48:39.861
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+
+# Created on 2018-06-25T13:48:39.867
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created on 2018-06-25T13:48:39.873
+	at java.lang.reflect.Method.invoke(Method.java:498)
+
+# Created on 2018-06-25T13:48:39.878
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+
+# Created on 2018-06-25T13:48:39.883
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+
+# Created on 2018-06-25T13:48:39.888
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+
+# Created on 2018-06-25T13:48:39.893
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+
+# Created on 2018-06-25T13:48:39.899
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+
+# Created on 2018-06-25T13:48:39.904
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+
+# Created on 2018-06-25T13:48:39.909
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+
+# Created on 2018-06-25T13:48:39.915
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+
+# Created on 2018-06-25T13:48:39.920
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+
+# Created on 2018-06-25T13:48:39.925
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+
+# Created on 2018-06-25T13:48:39.931
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+
+# Created on 2018-06-25T13:48:39.936
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+
+# Created on 2018-06-25T13:48:39.941
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+
+# Created on 2018-06-25T13:48:39.946
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:369)
+
+# Created on 2018-06-25T13:48:39.951
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:275)
+
+# Created on 2018-06-25T13:48:39.957
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:239)
+
+# Created on 2018-06-25T13:48:39.963
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:160)
+
+# Created on 2018-06-25T13:48:39.968
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+
+# Created on 2018-06-25T13:48:39.974
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+
+# Created on 2018-06-25T13:48:39.979
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+
+# Created on 2018-06-25T13:48:39.985
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+
+# Created on 2018-06-25T13:48:39.990
+
+
